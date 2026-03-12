@@ -1,0 +1,21 @@
+.external-section{
+
+color:white;
+border:3px solid blue;
+background-color:purple;
+
+font-family:Georgia;
+font-size:20px;
+padding:20px;
+margin:20px;
+
+}
+
+.text-style{
+
+font-weight:bold;
+font-style:italic;
+text-decoration:underline;
+font-size:22px;
+
+}

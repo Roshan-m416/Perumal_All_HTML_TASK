@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Methods Example</title>
+
+<!-- Internal CSS -->
+<style>
+
+.internal-section{
+color:white;
+background-color:green;
+border:3px solid black;
+font-family:Arial;
+font-size:20px;
+font-style:italic;
+padding:20px;
+margin:20px;
+}
+
+</style>
+
+<!-- External CSS -->
+<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+<h1>CSS Styling Methods</h1>
+
+<!-- Inline CSS Section -->
+<div style="color:blue; border:3px solid red; background-color:lightyellow; 
+font-family:Verdana; font-size:18px; padding:20px; margin:20px;">
+
+<h2>Inline CSS</h2>
+<p><b>This section uses Inline CSS.</b></p>
+<p style="text-decoration:underline;">Text is underlined.</p>
+
+</div>
+
+
+<!-- Internal CSS Section -->
+<div class="internal-section">
+
+<h2>Internal CSS</h2>
+<p>This section uses <b>Internal CSS</b> inside the style tag.</p>
+<p><u>Text is italic and styled using internal CSS.</u></p>
+
+</div>
+
+
+<!-- External CSS Section -->
+<div class="external-section">
+
+<h2>External CSS</h2>
+<p>This section uses <b>External CSS</b> from style.css file.</p>
+<p class="text-style">Different fonts and background image applied.</p>
+
+</div>
+
+</body>
+</html>
