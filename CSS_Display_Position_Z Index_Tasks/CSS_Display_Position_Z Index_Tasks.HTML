@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Display & Position Tasks</title>
+
+<style>
+
+/* Task 1 : Display Basics */
+
+.block-box{
+display:block;
+background-color:lightblue;
+margin:10px;
+padding:10px;
+}
+
+.inline-box{
+display:inline;
+background-color:lightgreen;
+margin:10px;
+padding:10px;
+}
+
+.inlineblock-box{
+display:inline-block;
+background-color:orange;
+width:120px;
+height:60px;
+margin:10px;
+padding:10px;
+}
+
+
+/* Task 2 : Hidden Element */
+
+.hidden-text{
+display:none;
+}
+
+
+/* Task 3 : Position Basics */
+
+.container{
+height:200px;
+border:2px solid black;
+margin-top:20px;
+position:relative;
+}
+
+.static-box{
+background-color:lightcoral;
+padding:10px;
+margin:5px;
+}
+
+.relative-box{
+position:relative;
+top:20px;
+left:20px;
+background-color:lightseagreen;
+padding:10px;
+margin:5px;
+}
+
+.absolute-box{
+position:absolute;
+bottom:0;
+right:0;
+background-color:gold;
+padding:10px;
+}
+
+
+/* Task 4 : Fixed & Sticky */
+
+.fixed-box{
+position:fixed;
+top:10px;
+right:10px;
+background-color:red;
+color:white;
+padding:10px;
+}
+
+.sticky-header{
+position:sticky;
+top:0;
+background-color:black;
+color:white;
+padding:10px;
+}
+
+
+/* Task 5 : Menu (Hidden by default) */
+
+.menu{
+display:none;
+background:#ddd;
+padding:10px;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Task 4 Sticky Header -->
+<div class="sticky-header">
+Sticky Header (Scroll to test)
+</div>
+
+
+<h2>Task 1 : Display Basics</h2>
+
+<h3>Display: Block</h3>
+<div class="block-box">Block Box 1</div>
+<div class="block-box">Block Box 2</div>
+<div class="block-box">Block Box 3</div>
+
+<p>Block elements take full width and start on a new line.</p>
+
+
+<h3>Display: Inline</h3>
+<div class="inline-box">Inline 1</div>
+<div class="inline-box">Inline 2</div>
+<div class="inline-box">Inline 3</div>
+
+<p>Inline elements stay in the same line.</p>
+
+
+<h3>Display: Inline-Block</h3>
+<div class="inlineblock-box">Inline Block 1</div>
+<div class="inlineblock-box">Inline Block 2</div>
+<div class="inlineblock-box">Inline Block 3</div>
+
+<p>Inline-block allows width and height but stays in the same line.</p>
+
+
+<h2>Task 2 : Hidden Element</h2>
+
+<p class="hidden-text">
+This paragraph is hidden using display:none
+</p>
+
+
+<h2>Task 3 : Position Basics</h2>
+
+<div class="container">
+
+<div class="static-box">
+Static Box
+</div>
+
+<div class="relative-box">
+Relative Box (shifted 20px)
+</div>
+
+<div class="absolute-box">
+Absolute Box (Bottom Right)
+</div>
+
+</div>
+
+
+<h2>Task 4 : Fixed Box</h2>
+
+<div class="fixed-box">
+Fixed Box
+</div>
+
+
+<h2>Task 5 : Menu (Hidden)</h2>
+
+<button>Menu</button>
+
+<div class="menu">
+<p>Home</p>
+<p>About</p>
+<p>Services</p>
+<p>Contact</p>
+</div>
+
+
+<br><br><br><br><br><br><br><br>
+
+<p>Scroll the page to see sticky header and fixed box.</p>
+
+</body>
+</html>
