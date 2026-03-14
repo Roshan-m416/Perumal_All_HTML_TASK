@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Practice Tasks</title>
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+/* Task 1
+Box takes 80% width but max 600px */
+
+.box{
+width:80%;
+max-width:600px;
+background:lightblue;
+padding:20px;
+margin:20px auto;
+text-align:center;
+}
+
+
+/* Task 2
+Paragraph font size using rem */
+
+.text{
+font-size:1.5rem;
+margin:20px;
+}
+
+
+/* Task 3
+Heading using vw */
+
+.responsive-heading{
+font-size:6vw;
+text-align:center;
+margin:20px;
+color:darkblue;
+}
+
+
+/* Task 4
+Media Query */
+
+.media-box{
+background-color:orange;
+padding:20px;
+text-align:center;
+margin:20px;
+}
+
+@media (max-width:768px){
+.media-box{
+background-color:lightgreen;
+}
+}
+
+
+/* Hover Tasks */
+
+.hover1{
+background:gray;
+color:white;
+padding:20px;
+margin:20px;
+width:200px;
+text-align:center;
+transition:background 0.3s;
+}
+
+.hover1:hover{
+background:black;
+}
+
+
+/* Grow on hover */
+
+.hover2{
+background:skyblue;
+padding:20px;
+margin:20px;
+width:200px;
+text-align:center;
+transition:transform 0.3s;
+}
+
+.hover2:hover{
+transform:scale(1.2);
+}
+
+
+/* Color size shadow change */
+
+.hover3{
+background:pink;
+padding:20px;
+margin:20px;
+width:200px;
+text-align:center;
+transition:all 0.3s;
+}
+
+.hover3:hover{
+background:red;
+color:white;
+transform:scale(1.1);
+box-shadow:0 5px 10px gray;
+}
+
+
+/* Reveal content */
+
+.card{
+background:#ddd;
+padding:20px;
+width:200px;
+margin:20px;
+text-align:center;
+position:relative;
+}
+
+.hidden-text{
+opacity:0;
+transition:opacity 0.5s;
+}
+
+.card:hover .hidden-text{
+opacity:1;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<h1 class="responsive-heading">Responsive Heading</h1>
+
+
+<!-- Task 1 -->
+<div class="box">
+This box takes 80% of screen width but maximum 600px.
+</div>
+
+
+<!-- Task 2 -->
+<p class="text">
+This paragraph uses 1.5rem font size. It depends on the root font size of the browser. 
+If the user increases browser font size, this text will also increase.
+</p>
+
+
+<!-- Task 4 -->
+<div class="media-box">
+Resize screen below 768px to see background color change.
+</div>
+
+
+<h2 style="margin:20px;">Hover Transition Tasks</h2>
+
+<!-- Hover 1 -->
+<div class="hover1">
+Hover Color Change
+</div>
+
+
+<!-- Hover 2 -->
+<div class="hover2">
+Grow on Hover
+</div>
+
+
+<!-- Hover 3 -->
+<div class="hover3">
+Color Size Shadow
+</div>
+
+
+<!-- Hover 4 -->
+<div class="card">
+Hover to reveal
+<p class="hidden-text">Hello! Hidden content</p>
+</div>
+
+
+</body>
+</html>
